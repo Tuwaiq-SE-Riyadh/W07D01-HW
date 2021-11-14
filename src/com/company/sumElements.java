@@ -7,7 +7,7 @@ public class sumElements {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int twoDimensionalArray [][] = new int [3][4];
+        double twoDimensionalArray [][] = new double [3][4];
 //        System.out.println(twoDimensionalArray[2].length);
 
         for(int i = 0 ; i <twoDimensionalArray.length ; i++ )
@@ -15,7 +15,7 @@ public class sumElements {
             for (int j = 0 ; j <twoDimensionalArray[i].length ; j++)
             {
                 System.out.print("i="+ i + "j="+j +" :");
-                twoDimensionalArray[i][j]= sc.nextInt();
+                twoDimensionalArray[i][j]= sc.nextDouble();
             }
         }
         calculateTheSumOfEachColumn(twoDimensionalArray);
@@ -24,9 +24,9 @@ public class sumElements {
     }
 
 
-    public static void  calculateTheSumOfEachColumn (int twoDiArray [][])
+    public static void  calculateTheSumOfEachColumn (double twoDiArray [][])
     {
-        int sum = 0 ;
+        double sum = 0 ;
         for(int i = 0 ; i <twoDiArray.length ; i++ ){
 
             for (int j = 0 ; j <twoDiArray[i].length ; j++)
